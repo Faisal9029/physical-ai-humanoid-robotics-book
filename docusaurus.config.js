@@ -13,11 +13,13 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://physical-ai-humanoid-robotics-book.vercel.app', // Vercel URL
+  url: process.env.DEPLOYMENT_TARGET === 'vercel'
+    ? 'https://physical-ai-humanoid-robotics-book.vercel.app'
+    : 'https://faisal9029.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is '/<projectName>/'
   // For Vercel deployment, it is '/'
-  baseUrl: '/',
+  baseUrl: process.env.DEPLOYMENT_TARGET === 'vercel' ? '/' : '/physical-ai-humanoid-robotics-book/',
 
   // GitHub pages deployment config.
   organizationName: 'Faisal9029', // Usually your GitHub org/user name.
