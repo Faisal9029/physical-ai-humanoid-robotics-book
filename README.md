@@ -21,9 +21,23 @@ This comprehensive textbook covers Physical AI and Humanoid Robotics concepts wi
 - **Part V**: Capstone - Autonomous Humanoid - Chapter 14
 - **Appendix**: Hardware & Lab Architecture and Glossary
 
-## Deployment to GitHub Pages
+## Deployment
 
-This site is configured for deployment to GitHub Pages. To deploy:
+This site can be deployed to Vercel or GitHub Pages.
+
+### Vercel Deployment (Recommended)
+
+The easiest way to deploy is to connect your GitHub repository to Vercel:
+
+1. Go to [vercel.com](https://vercel.com)
+2. Sign in and click "New Project"
+3. Import your GitHub repository
+4. Vercel will automatically detect this is a Docusaurus project
+5. Click "Deploy" and your site will be live instantly
+
+### GitHub Pages Deployment
+
+To deploy to GitHub Pages:
 
 1. Ensure you have the `gh-pages` branch in your repository
 2. Run the deploy command:
