@@ -1,0 +1,63 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+}
+
+/* Custom styles for RTL (Right-to-Left) support for Urdu */
+html[data-theme='ur'] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Adjust some elements for RTL */
+html[data-theme='ur'] .navbar {
+  direction: rtl;
+  text-align: right;
+}
+
+html[data-theme='ur'] .navbar__items {
+  flex-direction: row-reverse;
+}
+
+html[data-theme='ur'] .navbar__toggle {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+html[data-theme='ur'] .navbar__logo {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* Ensure proper RTL for docs */
+html[data-theme='ur'] .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module {
+  border-left: none;
+  border-right: 1px solid var(--ifm-toc-border-color);
+}
+
+html[data-theme='ur'] .docItemContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module {
+  margin-left: 0;
+  margin-right: var(--doc-sidebar-width);
+}
+
+/* For responsive design */
+@media (max-width: 996px) {
+  html[data-theme='ur'] .docItemWrapper_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module {
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+  }
+}
