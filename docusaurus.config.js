@@ -13,13 +13,14 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://speckit.github.io',
+  url: 'https://physical-ai-humanoid-robotics-book.vercel.app', // Vercel URL
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/physical-ai-humanoid-robotics-book/',
+  // For GitHub pages deployment, it is '/<projectName>/'
+  // For Vercel deployment, it is '/'
+  baseUrl: '/',
 
   // GitHub pages deployment config.
-  organizationName: 'speckit', // Usually your GitHub org/user name.
+  organizationName: 'Faisal9029', // Usually your GitHub org/user name.
   projectName: 'physical-ai-humanoid-robotics-book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -53,7 +54,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-username/physical-ai-humanoid-robotics-book/tree/main/',
+            'https://github.com/Faisal9029/physical-ai-humanoid-robotics-book/tree/main/',
         },
         blog: false, // Disable blog if not needed
         theme: {
@@ -86,7 +87,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/your-username/physical-ai-humanoid-robotics-book',
+            href: 'https://github.com/Faisal9029/physical-ai-humanoid-robotics-book',
             label: 'GitHub',
             position: 'right',
           },
